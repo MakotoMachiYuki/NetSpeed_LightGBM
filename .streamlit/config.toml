@@ -1,0 +1,31 @@
+[server]
+# Hot-reload on save during development while ignoring heavy data & git folders
+runOnSave = true
+fileWatcherType = "auto"
+folderWatchList = ["."]
+folderWatchBlacklist = ["Dataset", "Font", "__pycache__", ".git", ".venv", "venv", ".streamlit"]
+# address = "localhost"
+
+# Security & deployment settings
+enableCORS = true
+enableXsrfProtection = true
+maxUploadSize = 10
+
+[browser]
+# Disable telemetry in production deployments
+gatherUsageStats = false
+
+[client]
+# Hide Streamlit developer toolbar & prevent backend tracebacks from leaking in UI
+toolbarMode = "minimal"
+showErrorDetails = "none"
+
+[runner]
+fastReruns = true
+
+[theme]
+base = "dark"
+primaryColor = "#7c3aed"
+backgroundColor = "#0e1117"
+secondaryBackgroundColor = "#181e38"
+textColor = "#eef2ff"
